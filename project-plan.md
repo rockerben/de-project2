@@ -2,13 +2,13 @@
 
 ## Objective
 
-DVDRental is a niche company with a cult following, renting DVDs to generate revenue across the USA. However, the business has been experiencing a decline. Management seeks insights to enhance promotions and increase profits.
+DVDRental: where DVD dreams come true for a dedicated cult following nationwide! Despite a recent plot twist of declining fortunes, our management is on a quest for insights to boost promotions and profits.
 
-The objective of our project is to provide analytical datasets to the management and BI team, enabling them to develop dashboards that assist in decision-making.
+Our mission? Serving up juicy analytical datasets to our management and BI team, so they can craft dashboards that’ll have decisions made faster than you can hit "play".
 
 ## Consumers
 
-The dataset consumers are the Data Analysts and the Business Intelligence team. They will develop BI dashboards to monitor revenue changes and present their findings to senior management.
+The dataset consumers are our resident data wizards (Data Analysts) and the BI brainiacs. They're conjuring up BI dashboards that'll make revenue changes as clear as a rom-com ending. Then, they'll dazzle senior management with insights so sharp, they'll think we’ve finally cracked the DVD rental code!
 
 ## Questions
 
