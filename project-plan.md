@@ -2,36 +2,30 @@
 
 ## Objective
 
-DVDRental is a company renting out the dvds to earn money. The business covers all around USA. 
+DVDRental: where DVD dreams come true for a dedicated cult following nationwide! Despite a recent plot twist of declining fortunes, our management is on a quest for insights to boost promotions and profits.
 
-Nowadays the business has a declining tendency. The management wants to find out the following information for promotion purposes as well as gaining more profits.
-
-The objective of our project is to provide analytical datasets to management and BI team to develop dashboards to asist decision making.
-
+Our mission? Serving up juicy analytical datasets to our management and BI team, so they can craft dashboards that’ll have decisions made faster than you can hit "play".
 
 ## Consumers
 
-The business customers are senior management and the business intelligence team for developing BI dashboard to monitor the revenue changes.
+The dataset consumers are our resident data wizards (Data Analysts) and the BI brainiacs. They're conjuring up BI dashboards that'll make revenue changes as clear as a rom-com ending. Then, they'll dazzle senior management with insights so sharp, they'll think we’ve finally cracked the DVD rental code!
 
 ## Questions
 
-Nowadays the business has a declining tendency. The management wants to find out the following information for promotion purposes as well as gaining more profits.
+Management seeks the following information to improve promotions and increase profits:
 
-which film categories are most popular.
-In which cities, customers are more likely to rent the dvds.
-Identify the staffs who rent out most of the dvds. This is for the annual recognition events.
+- The most popular film categories.
+- The cities where customers are most likely to rent DVDs.
+- The staff members with the highest DVD rentals, to be recognized at annual events.
 
 ## Source datasets
 
-The datasets are dvdrental. The original datasets are from postgres database on the local machine. The data requires daily updates.
-
+The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-livery" service!
 
 ## Solution architecture
 
-https://github.com/rockerben/de-project2/blob/main/docs/elt-architecture.png
+![Logo](https://github.com/rockerben/de-project2/blob/main/docs/elt-architecture.png)
 
-
-- Data extraction patterns is full extraction.
-- Data loading patterns for the initial load is full load and incremental load for the ongoing process.
-- Data transformation patterns are including aggregation functions, grouping,data type casting, calculations, joins, renaming, etc.
-
+- When it comes to data extraction, we're all about full-on extraction.
+- For loading, it's full steam ahead for the initial load, with incremental boosts for ongoing updates.
+- And for transformations, we're into aggregation, grouping, casting (not the fishing kind), calculations, joins, renaming—you name it!

@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: dvd_rental
+    database: dw
+    schema: raw
+    tables:
+      - name: actor
+        description: "A table of actors from the DVD rental database"
+      - name: address
+        description: "A table of addresses from the DVD rental database"
+      - name: category
+        description: "A table of categories from the DVD rental database"
+      - name: city
+        description: "A table of cities from the DVD rental database"
+      - name: country
+        description: "A table of countries from the DVD rental database"
+      - name: customer
+        description: "A table of customers from the DVD rental database"
+      - name: film
+        description: "A table of films from the DVD rental database"
+      - name: film_actor
+        description: "A table of film actors from the DVD rental database"
+      - name: film_category
+        description: "A table of film categories from the DVD rental database"
+      - name: inventory
+        description: "A table of inventories from the DVD rental database"
+      - name: language
+        description: "A table of languages from the DVD rental database"
+      - name: payment
+        description: "A table of payments from the DVD rental database"
+      - name: rental
+        description: "A table of rentals from the DVD rental database"
+      - name: staff
+        description: "A table of staff from the DVD rental database"
+      - name: store
+        description: "A table of stores from the DVD rental database"
