@@ -1,0 +1,17 @@
+version: 2
+ref:
+  - database: dw
+  - schema: staging
+
+models:
+  - name: dim_actor
+    columns:
+      - name: actor_key
+        description: The surrogate key of the film_actor
+        tests:
+          - not_null
+          - unique
+      - name: first_name
+        description: The first name of actor
+      - name: last_name
+        description: The last name of actor

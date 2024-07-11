@@ -1,4 +1,5 @@
 dvdrental:
+
   target: dev
   outputs:
     dev:
@@ -13,6 +14,6 @@ dvdrental:
       role: accountadmin
       database: dw
       warehouse: xsmall_wh
-      schema: marts
+      schema: staging
       threads: 12
       client_session_keep_alive: False

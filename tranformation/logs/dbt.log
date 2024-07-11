@@ -92,3 +92,16 @@ Happy modeling!
 [0m16:05:13.025705 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m16:05:13.026610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bcc7b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112027250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x167ea7ed0>]}
 [0m16:05:13.027339 [debug] [MainThread]: Flushing usage events
+[0m09:25:50.855054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110092490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100fae90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1100fba10>]}
+
+
+============================== 09:25:50.861136 | a4ea82f2-0e03-44ba-b770-ffd3f0bec996 ==============================
+[0m09:25:50.861136 [info ] [MainThread]: Running with dbt=1.7.0
+[0m09:25:50.862363 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'log_path': 'logs', 'warn_error': 'None', 'write_json': 'True', 'introspect': 'True', 'partial_parse': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'fail_fast': 'False', 'static_parser': 'True', 'profiles_dir': '/Users/vivianchen/.dbt', 'log_format': 'default', 'version_check': 'True', 'quiet': 'False', 'invocation_command': 'dbt run -s dim_film', 'log_cache_events': 'False', 'printer_width': '80', 'use_colors': 'True', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])'}
+[0m09:25:50.863548 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/vivianchen/emilysong/Project2-bootcamp/de-project2/tranformation/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:25:50.876760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109dc7c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1101060d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110107750>]}
+[0m09:25:50.877526 [debug] [MainThread]: Flushing usage events
