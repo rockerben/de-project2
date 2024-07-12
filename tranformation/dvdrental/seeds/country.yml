@@ -1,0 +1,10 @@
+version: 2
+
+seeds:
+  - name: country
+    config:
+
+      column_types:
+        last_update: timestamp
+        country: varchar
+        country_id: integer

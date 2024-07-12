@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fact_payment
+    columns:
+      - name: customer_key
+        description: The surrogate key of the customer
+        tests:
+          - not_null
+      - name: staff_key
+        description: The surrogate key of the staff
+        tests:
+          - not_null
+      - name: rental_key
+        description: The surrogate key of the rental
+        tests:
+          - not_null
+      - name: payment_key
+        description: The surrogate key of the payment
+        tests:
+          - not_null
+          - unique
+      - name: payment_date
+        description: The paymentdate
+      - name: amount
+        description: The amount of payment
