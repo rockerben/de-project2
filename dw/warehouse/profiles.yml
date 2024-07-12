@@ -11,6 +11,6 @@ warehouse:
       role: "ACCOUNTADMIN"
       database: "dw"
       warehouse: "XSMALL_WH"
-      schema: "raw"
+      schema: "staging"
       threads: 12
       client_session_keep_alive: False
