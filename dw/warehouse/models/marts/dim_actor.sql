@@ -4,5 +4,5 @@ select
 first_name,
 last_name
 from {{ ref('actor')}} as actor
-left join {{ ref('film_actor')}} as film_actor
+join {{ ref('film_actor')}} as film_actor
 on film_actor.actor_id = actor.actor_id

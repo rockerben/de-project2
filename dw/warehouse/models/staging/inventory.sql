@@ -14,7 +14,7 @@ SELECT
 from {{ source ('dvd_rental', 'inventory') }}
 
 {% if is_incremental() %}
-    where last_update > (select max(last_update)- interval(2) from {{ this }} )
+    where last_update > (select max(last_update)- interval '2 day' from {{ this }} )
 {% endif %}
 
 
