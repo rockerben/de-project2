@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: dvd_rental
     database: dw
-    schema: staging
+    schema: raw
     tables:
       - name: actor
         description: "A table of actors from the DVD rental database"
