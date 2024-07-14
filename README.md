@@ -1,6 +1,6 @@
 # Modern ELT demo
 
-<img src="docs/dec-logo.png" width="250" height="250">
+<img src="assets/dec-logo.png" width="250" height="250">
 
 ![airbyte](https://img.shields.io/badge/airbyte-integrate-blue)
 ![dbt](https://img.shields.io/badge/dbt-transform-blue)
@@ -10,7 +10,7 @@
 
 This is a demo project to create an ELT pipeline using airbyte, dbt, snowflake and AWS Cloud.
 
-![docs/elt-architecture.png](docs/elt-architecture.png)
+![assets/elt-architecture.png](assets/elt-architecture.png)
 
 - [airbyte](https://docs.airbyte.com/)
 - [dbt](https://docs.getdbt.com/docs/introduction)
