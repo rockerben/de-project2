@@ -24,7 +24,7 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 ## Solution architecture
 
-![Logo](https://github.com/rockerben/de-project2/blob/main/docs/elt-architecture.png)
+![Logo](https://github.com/rockerben/de-project2/blob/main/assets/elt-architecture.png)
 
 - When it comes to data extraction, we're all about full-on extraction.
 - For loading, it's full steam ahead for the initial load, with incremental boosts for ongoing updates.
