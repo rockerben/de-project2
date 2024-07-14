@@ -1,9 +1,9 @@
 from jinja2 import Environment
-from integrate.assets.database_extractor import (
+from project.assets.database_extractor import (
     SqlExtractParser,
     DatabaseTableExtractor,
 )
-from integrate.connectors.postgresql import PostgreSqlClient
+from project.connectors.postgresql import PostgreSqlClient
 from graphlib import TopologicalSorter
 
 

@@ -1,31 +1,66 @@
-# Project plan
+# Modern ELT demo
 
-## Objective
+<img src="docs/dec-logo.png" width="250" height="250">
 
-DVDRental: where DVD dreams come true for a dedicated cult following nationwide! Despite a recent plot twist of declining fortunes, our management is on a quest for insights to boost promotions and profits.
+![airbyte](https://img.shields.io/badge/airbyte-integrate-blue)
+![dbt](https://img.shields.io/badge/dbt-transform-blue)
+![snowflake](https://img.shields.io/badge/snowflake-database-blue)
 
-Our mission? Serving up juicy analytical datasets to our management and BI team, so they can craft dashboards that’ll have decisions made faster than you can hit "play".
+## Introduction
 
-## Consumers
+This is a demo project to create an ELT pipeline using airbyte, dbt, snowflake and AWS Cloud.
 
-The dataset consumers are our resident data wizards (Data Analysts) and the BI brainiacs. They're conjuring up BI dashboards that'll make revenue changes as clear as a rom-com ending. Then, they'll dazzle senior management with insights so sharp, they'll think we’ve finally cracked the DVD rental code!
+![docs/elt-architecture.png](docs/elt-architecture.png)
 
-## Questions
+- [airbyte](https://docs.airbyte.com/)
+- [dbt](https://docs.getdbt.com/docs/introduction)
+- [AWS](https://aws.amazon.com)
+- [snowflake](https://docs.snowflake.com/en/)
 
-Management seeks the following information to improve promotions and increase profits:
+## Getting started
 
-- The most popular film categories.
-- The cities where customers are most likely to rent DVDs.
-- The staff members with the highest DVD rentals, to be recognized at annual events.
+1. Create a new snowflake account [here](https://signup.snowflake.com/)
 
-## Source datasets
+2. Run the SQL code [snowflake_airbyte_setup.sql](integration/destination/snowflake_airbyte_setup.sql) to configure an Airbyte account in Snowflake
 
-The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-livery" service!
+3. Export the following environment variables
 
-## Solution architecture
+   ```
+   export AIRBYTE_PASSWORD=your_snowflake_password_for_airbyte_account
+   export SNOWFLAKE_ACCOUNT_ID=your_snowflake_password
+   ```
 
-![Logo](https://github.com/rockerben/de-project2/blob/main/docs/elt-architecture.png)
+4. Install the python dependencies
 
-- When it comes to data extraction, we're all about full-on extraction.
-- For loading, it's full steam ahead for the initial load, with incremental boosts for ongoing updates.
-- And for transformations, we're into aggregation, grouping, casting (not the fishing kind), calculations, joins, renaming—you name it!
+   ```
+   pip install -r requirements.txt
+   ```
+
+5. Create the mock source database by:
+   - Install [postgresql](https://www.postgresql.org/)
+   - Create a new database in your localhost called `dvdrental`
+   - Unzip [dvdrental.zip](integration/source/dvdrental.zip)
+   - Use PgAdmin4 to [restore dvdrental](https://www.pgadmin.org/docs/pgadmin4/development/restore_dialog.html)
+
+## Using airbyte
+
+1. Create a source for the postgresql database `dvdrental`
+   - host: `host.docker.internal`
+2. Create a destination for the Snowflake database
+3. Create a connection between `dvdrental` and `snowflake`
+   - Namespace Custom Format: `<your_destination_schema>`
+4. Run the sync job
+
+## Using snowflake
+
+1. Log in to your snowflake account
+2. Go to `worksheets` > `+ worksheet`
+3. On the top right, select the role `ACCOUNTADMIN.AIRBYTE_WAREHOUSE`.
+4. On the top left of the worksheet, select `AIRBYTE_DATABASE.AIRBYTE_SCHEMA`
+5. Query one of the synced tables from airbyte e.g. `select * from customer`
+
+## Using dbt
+
+1. `cd` to `transform/dw`
+2. Execute the command `dbt docs generate` and `dbt docs serve` to create the dbt docs and view the lineage graph
+3. Execute the command `dbt build` to run and test dbt models

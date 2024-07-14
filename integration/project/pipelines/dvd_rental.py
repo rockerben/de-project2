@@ -1,15 +1,15 @@
 from sqlalchemy.exc import SQLAlchemyError
-from integrate.assets.metadata_logging import MetaDataLogging, MetaDataLoggingStatus
-from integrate.assets.pipeline_logging import PipelineLogging
+from project.assets.metadata_logging import MetaDataLogging, MetaDataLoggingStatus
+from project.assets.pipeline_logging import PipelineLogging
 from graphlib import TopologicalSorter
-from integrate.assets.extract_load_transform import (
+from project.assets.extract_load_transform import (
     extract_load,
     transform,
     SqlTransform,
 )
 from dotenv import load_dotenv
-from integrate.connectors.airbyte import AirbyteClient
-from integrate.connectors.postgresql import PostgreSqlClient
+from project.connectors.airbyte import AirbyteClient
+from project.connectors.postgresql import PostgreSqlClient
 from jinja2 import Environment, FileSystemLoader
 import os
 import sys
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
     # Log operations of the pipeline
     pipeline_logging = PipelineLogging(
-        pipeline_name="dvd_rental", log_folder_path="integration/integrate/logs"
+        pipeline_name="dvd_rental", log_folder_path="integration/project/logs"
     )
 
     try:
@@ -98,7 +98,7 @@ if __name__ == "__main__":
 
         transform_template_environment = Environment(
             loader=FileSystemLoader(
-                "integration/integrate/assets/sql/transform")
+                "integration/project/assets/sql/transform")
         )
 
         """ # create nodes
