@@ -7,9 +7,10 @@ paginate: true
 
 # Project 2 - ELT pipeline
 
-| Authors |
-|Ben - [rockerben](https://github.com/rockerben)|
-|Emily - [ZhiwenSong1](https://github.com/ZhiwenSong1)|
+| Authors                                               |
+| ----------------------------------------------------- |
+| Ben - [rockerben](https://github.com/rockerben)       |
+| Emily - [ZhiwenSong1](https://github.com/ZhiwenSong1) |
 
 ---
 
