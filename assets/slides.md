@@ -7,8 +7,9 @@ paginate: true
 
 # Project 2 - ELT pipeline
 
-Ben - [rockerben](https://github.com/rockerben)
-Emily - [ZhiwenSong1](https://github.com/ZhiwenSong1)
+| Authors |
+|Ben - [rockerben](https://github.com/rockerben)|
+|Emily - [ZhiwenSong1](https://github.com/ZhiwenSong1)|
 
 ---
 
@@ -52,7 +53,7 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 - [GIT Repository](https://github.com/rockerben/de-project2)
 
-- Activity (2 branches, 5 merged pull requests and ~25 commits)
+- Activity (2 branches, 5 merged pull requests and ~35 commits)
 
 ---
 
