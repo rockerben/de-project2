@@ -1,0 +1,2 @@
+2024-07-14 17:38:39,845 - dvd_rental - ERROR - Pipeline failed with exception (pg8000.dbapi.ProgrammingError) {'S': 'FATAL', 'V': 'FATAL', 'C': '28P01', 'M': 'password authentication failed for user "postgres"', 'F': 'auth.c', 'L': '338', 'R': 'auth_failed'}
+(Background on this error at: https://sqlalche.me/e/14/f405)
