@@ -58,6 +58,8 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 2. **Create a Postgres RDS**
    ![assets/rds_postgres.png](rds_postgres.png)
 
+   ![assets/pgadmin_rds.png](pgadmin_rds.png)
+
 3. **Create Airbyte Source Connection (Postgres)**
    ![assets/airbyte_postgres_rds_connection.png](airbyte_postgres_rds_connection.png)
 
