@@ -53,7 +53,7 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 # Proof of Work
 
 1. Install Airbyte on EC2
-   ![assets/airbyte ec2 instance.png](assets/airbyte ec2 instance.png)
+   ![assets/airbyteec2instance2.png](airbyteec2instance2.png)
 
 2. Create a Postgres RDS
 3. Create Airbyte Connection to Snowflake
