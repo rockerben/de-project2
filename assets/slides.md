@@ -74,7 +74,7 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 7. **DBT Modelling**
    ![assets/DBT.png](DBT.png)
 8. DBT Python Config
-   ![assets/DBTPython.png](DBT.png)
+   ![assets/DBTPython.png](DBTPython.png)
 
 9. Run Pipeline (set schedules)
    ![assets/screenshot1.png](screenshot1.png)
