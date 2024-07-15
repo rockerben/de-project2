@@ -57,8 +57,10 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 2. **Create a Postgres RDS**
    ![assets/rds_postgres.png](rds_postgres.png)
+
 3. **Create Airbyte Connection to Snowflake**
    ![assets/airbytesnowflakeconnection.png](airbytesnowflakeconnection.png)
+
 4. **Test Extract/Load**
 
    1. **Airbyte UI**
@@ -69,10 +71,13 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 5. **Build containers**
    ![assets/ECR_containers.png](ECR_containers.png)
+
 6. **Trigger the ECS (manual test)**
    ![assets/ECR_containers.png](ECR_containers.png)
+
 7. **DBT Modelling**
    ![assets/DBT.png](DBT.png)
+
 8. DBT Python Config
    ![assets/DBTPython.png](DBTPython.png)
 
