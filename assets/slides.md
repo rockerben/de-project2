@@ -52,32 +52,32 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 # Proof of Work
 
-1. Install Airbyte on EC2
+1. **Install Airbyte on EC2**
    ![assets/airbyteec2instance2.png](airbyteec2instance2.png)
 
-2. Create a Postgres RDS
+2. **Create a Postgres RDS**
    ![assets/rds_postgres.png](rds_postgres.png)
-3. Create Airbyte Connection to Snowflake
+3. **Create Airbyte Connection to Snowflake**
    ![assets/airbytesnowflakeconnection.png](airbytesnowflakeconnection.png)
-4. Test Extract/Load
+4. **Test Extract/Load**
 
-   1. Airbyte UI
+   1. **Airbyte UI**
       ![assets/airbyte_ec2_sync_test.png](airbyte_ec2_sync_test.png)
 
-   2. Airbyte API (Python project)
+   2. **Airbyte API (Python project)**
       ![assets/AirbyteAPIPython.png](AirbyteAPIPython.png)
 
-5. Build containers
+5. **Build containers**
    ![assets/ECR_containers.png](ECR_containers.png)
-6. Trigger the ECS (manual test)
+6. **Trigger the ECS (manual test)**
    ![assets/ECR_containers.png](ECR_containers.png)
-7. DBT Modelling
+7. **DBT Modelling**
    ![assets/DBT.png](DBT.png)
 8. DBT Python Config
-   ![assets/DBT.png](DBT.png)
+   ![assets/DBTPython.png](DBT.png)
 
 9. Run Pipeline (set schedules)
-   ![assets/rds_postgres.png](rds_postgres.png)
+   ![assets/screenshot1.png](screenshot1.png)
 
 ---
 
