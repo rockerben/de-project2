@@ -95,7 +95,7 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 - [GIT Repository](https://github.com/rockerben/de-project2)
 
-- Activity (2 branches, 5 merged pull requests and ~35 commits)
+- Activity (2 branches, 5 merged pull requests and ~60 commits)
 
 ---
 
