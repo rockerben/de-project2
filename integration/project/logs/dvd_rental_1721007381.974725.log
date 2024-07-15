@@ -1,0 +1,2 @@
+2024-07-15 11:37:39,045 - dvd_rental - ERROR - Pipeline failed with exception (pg8000.exceptions.InterfaceError) Can't create a connection to host de2-dvd-rental.c9coy0m8sb4w.ap-southeast-2.rds.amazonaws.com and port 5433 (timeout is None and source_address is None).
+(Background on this error at: https://sqlalche.me/e/14/rvf5)
