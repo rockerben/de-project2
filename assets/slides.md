@@ -46,7 +46,7 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 
 # Solution architecture
 
-![width:20cm height:12cm]![Logo](https://github.com/rockerben/de-project2/blob/main/assets/elt-architecture.png)
+![Logo](https://github.com/rockerben/de-project2/blob/main/assets/elt-architecture.png)
 
 ---
 
