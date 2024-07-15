@@ -58,15 +58,11 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 4. Test Extract/Load
    1. Airbyte UI
    2. Airbyte API (Python project)
-   3.
 5. Build containers
 6. Trigger the ECS (manual test)
-7. DBT
-8. Run Pipeline (set schedules)
-
-- [GIT Repository](https://github.com/rockerben/de-project2)
-
-- Activity (2 branches, 5 merged pull requests and ~35 commits)
+7. DBT Modelling
+8. DBT Python Config
+9. Run Pipeline (set schedules)
 
 ---
 
