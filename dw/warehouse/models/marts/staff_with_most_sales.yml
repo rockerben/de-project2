@@ -1,0 +1,8 @@
+model:
+  - name: staff_with_most_sales
+    description: The staff with relevant sales amount
+    columns:
+      - name: full_name
+        description: The full name of staff
+      - name: sales
+        decritption: The total sales from the staff
