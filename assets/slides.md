@@ -53,15 +53,18 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
 # Proof of Work
 
 1. **Install Airbyte on EC2**
-   ![assets/airbyteec2instance2.png](airbyteec2instance2.png)
+   ![assets/airbyte_ec2_instance.png](airbyte_ec2_instance.png)
 
 2. **Create a Postgres RDS**
    ![assets/rds_postgres.png](rds_postgres.png)
 
-3. **Create Airbyte Connection to Snowflake**
+3. **Create Airbyte Source Connection (Postgres)**
+   ![assets/airbyte_postgres_rds_connection.png](airbyte_postgres_rds_connection.png)
+
+4. **Create Airbyte Destination Connection (Snowflake)**
    ![assets/airbytesnowflakeconnection.png](airbytesnowflakeconnection.png)
 
-4. **Test Extract/Load**
+5. **Test Extract/Load**
 
    1. **Airbyte UI**
       ![assets/airbyte_ec2_sync_test.png](airbyte_ec2_sync_test.png)
@@ -69,20 +72,20 @@ The datasets are from DVDRental, where our PostgreSQL server runs a daily "DVD-l
    2. **Airbyte API (Python project)**
       ![assets/AirbyteAPIPython.png](AirbyteAPIPython.png)
 
-5. **Build containers**
+6. **Build containers**
    ![assets/ECR_containers.png](ECR_containers.png)
 
-6. **Trigger the ECS (manual test)**
+7. **Trigger the ECS (manual test)**
    ![assets/ECR_containers.png](ECR_containers.png)
 
-7. **DBT Modelling**
+8. **DBT Modelling**
    ![assets/DBT.png](DBT.png)
 
-8. DBT Python Config
+9. DBT Python Config
    ![assets/DBTPython.png](DBTPython.png)
 
-9. Run Pipeline (set schedules)
-   ![assets/screenshot1.png](screenshot1.png)
+10. Run Pipeline (set schedules)
+    ![assets/screenshot1.png](screenshot1.png)
 
 ---
 
