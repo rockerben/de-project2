@@ -1,0 +1,13 @@
+models:
+  - name: city_with_most_rental
+    description: This table shows the cities with most sales
+    columns:
+      - name: city
+        description: The title of city
+        tests:
+          - not_null
+          - unique
+
+      - name: sales
+        decription: The total sales for each city
+

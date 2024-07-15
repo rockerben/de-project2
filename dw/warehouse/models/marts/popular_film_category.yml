@@ -1,0 +1,12 @@
+models:
+  - name: popular_film_category
+    description: The most popular film categories per year and month
+    columns:
+      - name: yr
+        description: The year
+      - name: mth
+        description: The month
+      - name: year_month
+        description: The year and month
+      - name: sales_amount
+        description: The most sales film categories per year month
